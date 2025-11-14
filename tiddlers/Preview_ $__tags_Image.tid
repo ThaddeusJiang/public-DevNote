@@ -1,0 +1,11 @@
+created: 20250923034424157
+modified: 20250923034518337
+tags: 
+title: Preview: $:/tags/Image
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[shadows+tiddlers]is[image]] [all[shadows+tiddlers]tag[$:/tags/Image]] -[type[application/pdf]] +[sort[title]]">
+	<$link to={{!!title}}>
+		<$transclude/> <$view field="title"/>
+	</$link>
+</$list>

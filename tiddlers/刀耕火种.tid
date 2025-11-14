@@ -1,0 +1,12 @@
+created: 20251001015910333
+modified: 20251001020209956
+title: 刀耕火种
+type: text/vnd.tiddlywiki
+
+
+* 有 utility-first 的 tailwindcss 不用，非要写 raw css
+* 有 daisyUI 不用，非要平铺 tailwindcss
+* 有好用 schema base 的 zod 不用，手写验证数据
+* 有 client-side generator 不用，非要独自封装 fetch
+
+

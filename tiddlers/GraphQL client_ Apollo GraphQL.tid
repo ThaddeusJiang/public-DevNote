@@ -1,0 +1,12 @@
+created: 20250430031722833
+modified: 20251008030424131
+tags: 
+title: GraphQL client: Apollo GraphQL
+type: text/vnd.tiddlywiki
+
+
+文档一般，搜索功能弱，搜索结果混乱；反应慢。
+
+Apollo 的 GraphQL 生态还是挺全面的，虽然我不确定是否真的有价值。
+
+https://www.apollographql.com/docs/react/api/react/useQuery

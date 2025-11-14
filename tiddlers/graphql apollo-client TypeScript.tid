@@ -1,10 +1,11 @@
 created: 20250430030602336
-modified: 20250430032036872
+modified: 20251008031004356
 tags: 
 title: graphql apollo-client TypeScript
 type: text/vnd.tiddlywiki
 
 
+ApolloGraphQL client 的 TypeScript 很奇怪
 
 ```ts
 import type { FragmentType } from "@apollo/client";

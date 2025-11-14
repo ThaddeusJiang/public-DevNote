@@ -1,0 +1,17 @@
+created: 20251008032052455
+modified: 20251008032558709
+tags: 
+title: data sync 细节
+type: text/vnd.tiddlywiki
+
+
+
+* 乐观更新 Optimistic Update
+* 自动 fetch-render
+* cache 和 global fetch
+* 主动 fetch
+* 关联操作：mutation 后 query 等
+
+我的成长
+
+* 最早是在 Apollo 学到了很多，例如：Optimistic

@@ -1,9 +1,9 @@
 created: 20230627095431301
-modified: 20250825054215664
+modified: 20250923075443534
 new: 
-old: Filter error: Syntax error in filter expression
-tags: tw5-lego
-title: tag-renamer
+old: 
+tags: 
+title: tw5-lego/tag-renamer
 type: text/vnd.tiddlywiki
 
 Old tag: <$edit-text tiddler=<<currentTiddler>> field="old" placeholder="old tag"/>

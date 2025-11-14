@@ -1,0 +1,27 @@
+created: 20251006014540818
+modified: 20251006015049942
+tags: 
+title: web number input CSS
+type: text/vnd.tiddlywiki
+
+
+[img[web-number-input-default.png]]
+
+
+这个上下调整的按钮非常不协调，我基本上都会修改掉。
+
+```css
+/* Chrome / Safari / Edge (WebKit/Blink) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield; 
+}
+/* 现代 Firefox 可用，无需 -moz- 前缀 */
+/* 如果需要旧版兼容，可加：-moz-appearance: textfield; */
+```
+

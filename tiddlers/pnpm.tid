@@ -1,0 +1,8 @@
+created: 20250923072507051
+modified: 20250923072726381
+tags: TechRadar/采纳
+title: pnpm
+type: text/vnd.tiddlywiki
+
+
+我也不确定为什么一定要 pnpm，其实我的实际使用体验上 npm, yarn, pnpm 差距并不大，不过 npm corepack 提供了开箱即用的 pnpm，就用吧，毕竟社区中大部分项目都在用 pnpm。

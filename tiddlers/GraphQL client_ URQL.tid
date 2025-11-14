@@ -1,7 +1,7 @@
 created: 20250806023546431
-modified: 20250806023839135
+modified: 20251008031133130
 tags: 
-title: URQL
+title: GraphQL client: URQL
 type: text/vnd.tiddlywiki
 
 urql is a GraphQL Client.

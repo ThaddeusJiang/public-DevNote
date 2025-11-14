@@ -1,0 +1,17 @@
+created: 20250923075625199
+modified: 20250923075928089
+tags: TechRadar/采纳
+title: Agents.md
+type: text/vnd.tiddlywiki
+
+
+看到 PhoenixFramework 默认提供 Agents.md ，我觉得我也应该试试
+
+Agents.md 有点
+
+# 拒绝工具锁定，.cursor/rules , Claude.md 都不好，期待一个统一的定义方式
+
+https://github.com/phoenixframework/phoenix/blob/v1.8.1/installer/templates/phx_single/AGENTS.md
+
+
+https://cursor.directory/official/supabase-typescript

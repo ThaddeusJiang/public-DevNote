@@ -1,0 +1,9 @@
+created: 20251013050705416
+modified: 20251013052039815
+tags: TechRadar/工具 TechRadar/心动
+title: Moondream.ai
+type: text/vnd.tiddlywiki
+
+Moondream.ai 是一个视觉 AI 模型，官网的例子很酷。
+
+为什么我注意到它，因为我现在使用 Typesense 进行图片的自然语言检索，但是有点弱，没有真正做到可视化。

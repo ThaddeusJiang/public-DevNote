@@ -1,0 +1,20 @@
+created: 20251014015932716
+modified: 20251014021112011
+tags: TechRadar/放弃
+title: SSG (Static Site Generation)
+type: text/vnd.tiddlywiki
+
+对于大多数 website SSG 似乎都没什么意义，除非你的 website 是一个只卖几个产品的小网站，并且数据几乎不更新。
+
+在 SEO 方面，SSG 并不会比 SSR 更好，SSR 已经足够好了。
+
+什么时候适合用 SSG ？
+
+答：文档类网页，例如：blog, documents, guide 等
+
+但是文档类网页本身提供的经济价值并不高，我觉得根本没有必要折腾技术。
+
+refs:
+
+* https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation
+* https://nextjs.org/docs/app/guides/incremental-static-regeneration

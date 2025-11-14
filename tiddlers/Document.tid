@@ -1,0 +1,39 @@
+created: 20251014021354408
+modified: 20251014023446660
+tags: 
+title: Document
+type: text/vnd.tiddlywiki
+
+对于技术文档的期待：
+
+* 搜索结果是经过优化的，高频使用的内容应该最先被展示。
+* 需要可以检索
+* 需要可以选择版本
+* 提供 LLMs 即成，llms.txt 或者 AGENTS.md 都可以
+
+
+!! Bad Documents
+
+* Tanstack: 检索结果没有优化，低使用率内容污染了搜索结果。
+
+ [img width="300px" [https://i.gyazo.com/d027e8752cdc63345a5e64ab465085af.png]]
+
+* react-hook-form:  检索结果没有优化，低使用率内容污染了搜索结果。
+
+[img width="300px" [https://i.gyazo.com/50f456ace2c260c604bda7783eb5282e.png]]
+
+* Conform: 没有检索功能，也不能全局检索
+
+[img width="300px" [https://i.gyazo.com/345c0c11656a088d9817c9cba16f941d.png]]
+
+* Zod/v4:  检索结果没有优化，低使用率内容污染了搜索结果。
+
+[img width="300px" [https://i.gyazo.com/7692b37cd180f0e55fc90d440123f4dd.png]]
+
+
+!! Good Document
+
+* Bun
+
+[img width="300px" [https://i.gyazo.com/0874359f3358e61126d4737a4ee54c7c.png]]
+

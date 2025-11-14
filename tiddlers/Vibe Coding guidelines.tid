@@ -1,0 +1,26 @@
+created: 20250923080545997
+modified: 20250925014508949
+tags: 
+title: Vibe Coding guidelines
+type: text/vnd.tiddlywiki
+
+
+我在使用的 Vibe Coding guidelines
+
+* [[Phoenix web framework 提供的 Elixir and Phoenix guidelines|https://github.com/phoenixframework/phoenix/blob/v1.8.1/installer/templates/phx_single/AGENTS.md]]
+
+* [[dasiyUI 提供的 llms.txt|https://daisyui.com/llms.txt]]
+
+* [[Vercel Web Interface Guidelines|https://vercel.com/design/guidelines]]
+
+* [[Builder.io Agents.md|https://www.builder.io/blog/agents-md]]
+
+* [[cursor.directory supabase-typescript|https://cursor.directory/official/supabase-typescript]]
+
+
+* [[openai/agents.md|https://github.com/openai/agents.md/blob/main/AGENTS.md]]
+
+
+
+
+

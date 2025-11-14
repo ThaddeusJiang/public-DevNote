@@ -1,11 +1,11 @@
 created: 20250920065412458
-modified: 20250920070628309
+modified: 20251008031400556
 tags: TechRadar/放弃
 title: Dexie.js
 type: text/vnd.tiddlywiki
 
 A Minimalistic Wrapper for IndexedDB
 
-imo: 因为是 IndexedDB，所以不值得继续投资了。详细，参看 IndexedDB
+imo: 因为是 IndexedDB，所以不值得继续投资了。详见 IndexedDB
 
 https://dexie.org/

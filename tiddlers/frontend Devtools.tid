@@ -1,0 +1,17 @@
+created: 20251008024348452
+modified: 20251008024657946
+tags: 
+title: frontend Devtools
+type: text/vnd.tiddlywiki
+
+
+我个人更喜欢通过代码安装和使用 Devtools 而不是安装浏览器插件。
+
+Good
+
+* Tanstack/Query Devtools  https://tanstack.com/query/v5/docs/framework/react/devtools
+* react-hook-form DevTools https://react-hook-form.com/dev-tools
+
+Not Good
+
+* urql Devtools https://nearform.com/open-source/urql/docs/advanced/debugging/#devtools

@@ -1,5 +1,5 @@
 created: 20250318145350151
-modified: 20250424101244145
+modified: 20251008031336270
 tags: 
 title: Data fetching
 type: text/vnd.tiddlywiki
@@ -9,5 +9,5 @@ type: text/vnd.tiddlywiki
 # http fetch (RESTful, GraphQL)
 # SSR: data fetching in server-side
 # Sync, subscribe, useLive 等
-#* 代表： [[electric-sql]] [[RxDB]] [[Dexie.js]]
+#* 代表： [[electric-sql]] [[RxDB]] Dexie.js
 #* React hooks useSyncExternalStore

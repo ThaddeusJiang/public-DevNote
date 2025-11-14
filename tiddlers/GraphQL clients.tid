@@ -1,0 +1,17 @@
+created: 20250430032227049
+modified: 20251008031712984
+tags: 
+title: GraphQL clients
+type: text/vnd.tiddlywiki
+
+> 2025-04-30 我使用 [[URQL]] 
+
+理由：
+
+* TypeScript 编写方式简单，符合 plain object 思维模式
+
+!! clients
+
+* urql
+* apollo
+* relay

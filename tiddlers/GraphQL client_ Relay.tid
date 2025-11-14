@@ -1,7 +1,7 @@
 created: 20250918052214060
-modified: 20250918052437565
+modified: 20251008031529781
 tags: 2025
-title: Relay GraphQL client
+title: GraphQL client: Relay
 type: text/vnd.tiddlywiki
 
 
@@ -10,5 +10,5 @@ type: text/vnd.tiddlywiki
 https://github.com/facebook/relay
 
 
-
-类似 [[URQL]] [[Apollo GraphQL client]]
+* urql
+* apollo

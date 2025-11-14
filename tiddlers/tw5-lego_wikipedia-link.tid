@@ -1,0 +1,26 @@
+created: 20250923040230400
+modified: 20250923075553775
+tags: $:/tags/ViewTemplate $:/tags/Stylesheet
+title: tw5-lego/wikipedia-link
+type: text/vnd.tiddlywiki
+
+<$list filter="[<currentTiddler>has[wikipedia]]" >
+
+<style>
+a.tc-tiddlylink > svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+</style>
+
+
+  <a href={{!!wikipedia}}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open Wikipedia"
+		class="tc-btn-invisible tc-tiddlylink"
+	>
+		wikipedia {{$:/core/images/open-window}}
+	</a>
+</$list>

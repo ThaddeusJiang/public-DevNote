@@ -1,0 +1,12 @@
+created: 20250923082552812
+modified: 20250923082819651
+tags: 
+title: 拒绝被工具锁定
+type: text/vnd.tiddlywiki
+
+
+* AWS lambda 没有 docker container 自由
+* TODO: Next.js 是否被 Vercel 锁定？
+* Nest.js 将开发者锁死
+
+

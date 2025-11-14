@@ -1,0 +1,10 @@
+created: 20251017013543736
+modified: 20251017013847856
+tags: TechRadar/暂缓
+title: ollama
+type: text/vnd.tiddlywiki
+
+2025-10-17 Goodbye Ollama
+
+一转眼有很久没看起 ollama 了。
+意识到除非有明确需求，不然本地运行 AI 模型其实没什么必要。类似 [[过早优化]]

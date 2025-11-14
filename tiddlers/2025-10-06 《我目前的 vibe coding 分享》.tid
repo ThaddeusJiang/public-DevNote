@@ -1,0 +1,90 @@
+created: 20251006025205820
+modified: 20251006031613364
+tags: 
+title: 2025-10-06 《我目前的 vibe coding 分享》
+type: text/vnd.tiddlywiki
+
+
+
+我目前的 vibe coding 分享
+
+几个前提：
+
+# 我在一个团队中工作，项目有自己的架构和 Design System ，不是从一句话直接生成一个 website 的 hello world projects.
+
+! 以下是专门为内部分享准备的内容
+
+背景
+
+* 项目构成：rails 8 GraphQL server + Next.js App Router client
+* 项目资料：Jira 关于任务的背景、要求和期待，Figma 中包含 UI 设计细节
+
+我使用的工具
+
+* Cursor
+** Jira MCP
+** Figma MCP
+** Playwright MCP
+** tidewave.ai
+
+我使用的 coding agents guidelines
+
+* `AGENTS.md` 优点是摆脱工具依赖，虽然我目前使用 Cursor，但是团队中其他人可以使用 Claude Code 或者 Codex 
+
+我使用 commands
+
+* plan
+* coding mvp
+* coding
+* review
+* commit
+
+有点类似 GitHub 开源的 https://github.com/github/spec-kit
+
+我的 commands 优点：
+
+# copy and paste 即可使用，不需要安装，不需要依赖 `python`
+# 就是几个简单的 markdown 文件，大家可以使用自己熟练的语言，日本语，中文都是可以的
+
+
+!! 演示一下我是如何进行开发的
+
+首先是 feature
+
+# 我通过 plan commands 调用 Jira MCP 获取功能需求和期待
+# 通过 Figma MCP 取得 UI 设计细节
+# 使用 coding mvp 命令先完成一个初版
+# 使用 playwright MCP 进行简单的测试
+# commit command
+# 使用 coding, review, commit Loop 直至满意为止
+# 提交
+
+这中间细节
+
+* AGENTS.md 很重要，因为 AI 有时候会输出不符合项目要求的代码，应该及时将约束条件补充道 AGENTS.md 中。
+
+FAQ: 
+
+* AI 总是使用 English 回复，如何解决？ Rules
+
+
+!! bugfix
+
+# 依然使用 Jira MCP 获取背景和期待
+# 使用 Playwright 再现 bug, `browser_console_messages` 可以取得一些 UI 细节
+# 使用 plan 生成修复计划
+# 使用 coding, review, commit Loop 直至满意
+# 提交
+
+这里我推荐 tidewave 更专注 rails + react 的 coding agent.
+
+
+
+
+
+
+
+
+
+
+

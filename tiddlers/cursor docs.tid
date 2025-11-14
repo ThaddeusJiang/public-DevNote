@@ -1,0 +1,11 @@
+created: 20250923081059598
+modified: 20250923081131678
+tags: 
+title: cursor docs
+type: text/vnd.tiddlywiki
+
+
+```sh
+curl -L https://daisyui.com/llms.txt --create-dirs -o .cursor/rules/daisyui.mdc
+
+```

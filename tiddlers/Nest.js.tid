@@ -1,10 +1,11 @@
 created: 20250622033528504
-modified: 20250622033612745
+modified: 20250923082922711
+tags: TechRadar/放弃
 title: Nest.js
 type: text/vnd.tiddlywiki
 
 
-错误将 Java Spring 框架的依赖注入风格带到 JS 社区。
+错误将 Java Spring 框架的依赖注入风格带到 JS 社区，JS 不需要依赖注入。
 
 [[依赖注入风格的问题]]
 

@@ -1,8 +1,13 @@
 created: 20250622032001969
-modified: 20250622032834875
-tags: TechRadar/采纳
-title: tidewave.ai
+history: 2025-09-25
+modified: 20250925083705976
+tags: TechRadar/采纳 repeated
+title: Tidewave.ai
 type: text/vnd.tiddlywiki
+
+
+> 2025-09-25
+> 执行一些 SQL，或者 fetch data 超级棒。
 
 tidewave 开发环境下使用的 MCP 工具。
 

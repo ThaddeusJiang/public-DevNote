@@ -1,0 +1,60 @@
+created: 20251003015129761
+modified: 20251003020034831
+tags: 
+title: 2025-10-03
+type: text/vnd.tiddlywiki
+
+
+继成为 Apple 黑子以后，我似乎也变成了 React 黑子，😂
+
+我认真的觉得 React 已经到头了，似乎真的快到了 React 的 jQuery 时刻了。
+
+React 19.2 的几个新特性让我觉得 React 似乎真的没什么值得做的东西，似乎都是在画蛇添足。
+  
+`<Activity />` 虽然被宣传可以帮助 `performance optimization called Selective Hydration` 但是感觉很鸡肋，真正的复杂项目中，性能瓶颈完全不在这么小的 UI 渲染上。
+
+`useEffectEvent` 就更扯了，官方给的例子本身就是有问题，提供一个新的 API 解决本来就是错误的代码问题，只能错上加错，徒增框架复杂度。
+
+React 官方认为有问题的 useEffect 使用
+
+```js
+function ChatRoom({ roomId, theme }) {
+  useEffect(() => {
+    const connection = createConnection(serverUrl, roomId);
+    connection.on('connected', () => {
+      showNotification('Connected!', theme);
+    });
+    connection.connect();
+    return () => {
+      connection.disconnect()
+    };
+  }, [roomId, theme]);
+```
+
+React 官方通过添加一个新的 `useEffectEvent` 解决
+
+```js
+function ChatRoom({ roomId, theme }) {
+  const onConnected = useEffectEvent(() => {
+    showNotification('Connected!', theme);
+  });
+
+  useEffect(() => {
+    const connection = createConnection(serverUrl, roomId);
+    connection.on('connected', () => {
+      onConnected();
+    });
+    connection.connect();
+    return () => connection.disconnect();
+  }, [roomId]); // ✅ All dependencies declared (Effect Events aren't dependencies)
+```
+
+我的解决方案：保持 showNotification 独立性，保持 pure function
+
+```js
+
+```
+
+https://react.dev/blog/2025/10/01/react-19-2#use-effect-event
+
+

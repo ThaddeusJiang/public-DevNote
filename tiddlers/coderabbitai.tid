@@ -1,0 +1,20 @@
+created: 20250923065323206
+modified: 20250923065837814
+tags: TechRadar/放弃
+title: coderabbitai
+type: text/vnd.tiddlywiki
+
+
+已经移除了 CodeRabbit https://github.com/apps/coderabbitai
+
+理由
+
+通用 AI eat 专用软件，Claude Code 已经完全可以替代 CodeRabbit 了。我个人认为 code rabbit 没有继续投资的必要了，不如熟练掌握 Claude Code 的使用。
+
+并且 code rabbit 生成的 code review comment 有点过于繁琐了，感觉增加了不必要的复杂度。
+
+Code Rabbit 的有点
+
+# 时序图挺好的 （Sequence Diagram）
+
+https://github.com/ThaddeusJiang/tw5-lego/pull/11

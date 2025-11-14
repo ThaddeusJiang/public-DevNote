@@ -1,0 +1,13 @@
+created: 20251001015335767
+modified: 20251001015903601
+tags: TJ_edu
+title: web frontend: 正式项目 form helper 是必须的
+type: text/vnd.tiddlywiki
+
+虽然很多 web framework 的 Get Started 文档中都可以处理 raw form，但是在正式项目中 form helper 却是必须的。React 生态中 react-hook-form 主攻 client-side，conform 可以兼顾 client-side 和 server-side，但是 server-side 仅适合 Next.js Remix 这种 JS 框架。
+
+为什么 form helper 是必须的？
+
+# form 有很多状态，validate, submit, reset, isDirty 等等，不应该[[刀耕火种]]
+# form validate 产生的 error message 也不应该[[刀耕火种]]
+

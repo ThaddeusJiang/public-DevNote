@@ -1,0 +1,15 @@
+created: 20250925083218355
+modified: 20250925083537398
+tags: TechRadar/工具
+title: WhoDB
+type: text/vnd.tiddlywiki
+
+号称可以用自然语言进行简单的数据分析。
+
+> 通过 docker 启动失败了。🤣
+
+仔细想想，如果可以信任 AI 提供商，似乎所有 Chat App 都可以做类似的事情，无非就是生成 SQL 并执行而已。
+
+从这个角度想，[[Tidewave.ai]] 还是更优秀
+
+https://github.com/clidey/whodb

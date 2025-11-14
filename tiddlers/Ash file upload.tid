@@ -1,0 +1,27 @@
+created: 20251014054206554
+modified: 20251014054325481
+tags: 
+title: Ash file upload
+type: text/vnd.tiddlywiki
+
+
+Ash 支持 `:file` 类型，超级简单。
+
+
+```elixir
+create :create_user do
+  argument :profile_photo, :file
+  change fn changeset, _ ->
+    Ash.Changeset.before_transaction(changeset, fn changeset, _ ->
+      if upload = changeset.arguments[:file] do
+         url = <upload to s3>
+         Ash.Changeset.force_change_attribute(changeset, :profile_photo_url, url)
+      else
+         changeset
+      end
+    end
+  end
+end
+```
+
+https://elixirforum.com/t/storing-and-uploading-files-using-the-json-api/68794
