@@ -1,0 +1,11 @@
+created: 20251114071523914
+modified: 20251114071541516
+tags: 
+title: git 查看差分
+type: text/vnd.tiddlywiki
+
+```
+git fetch origin
+
+git diff origin/develop...HEAD -- spec/rails_helper.rb
+```

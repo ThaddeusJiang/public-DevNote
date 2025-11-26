@@ -1,8 +1,12 @@
 created: 20250801051233589
-modified: 20250801051501845
+modified: 20251114065844543
 tags: 
 title: NestJS
 type: text/vnd.tiddlywiki
+
+不喜欢基于注解和依赖注入的代码风格，过度隐藏细节，需要学习大量 framework API 才能开始开发。framework API 可扩展性低，不应该过度投入时间。
+
+> libraries are easy to change, framework is hard to change.
 
 I don't use NestJS
 

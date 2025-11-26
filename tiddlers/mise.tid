@@ -1,7 +1,17 @@
 created: 20251114032021629
-modified: 20251114032039013
-tags: 
+modified: 20251126062126388
+tags: TechRadar/采纳
 title: mise
 type: text/vnd.tiddlywiki
 
-https://thaddeusjiang.com/wiki#mise
+很喜欢 mise ，使用很简单，并且支持多种编程语言。
+
+```
+mise use -g elixir@1.19
+mise use -g node@24
+mise use -g python@3.13
+```
+
+* 支持文件夹版本
+
+https://mise.jdx.dev/

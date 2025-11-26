@@ -1,0 +1,7 @@
+created: 20251114065726170
+modified: 20251114065811236
+tags: TechRadar/放弃
+title: RedwoodJS
+type: text/vnd.tiddlywiki
+
+RedwoodJS 生成的 types, tests 简直就是灾难，尤其是在 db migration 之后，各种混乱，想修改一点代码太难了。
