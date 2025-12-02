@@ -1,0 +1,16 @@
+created: 20251128063651596
+modified: 20251128064402382
+tags: 
+title: My AI Coding Agents
+type: text/vnd.tiddlywiki
+
+
+我认为 [[Devin.ai]] 比 [[Claude]] Code 更好用。
+
+# Devin.ai 更像人类
+## devin 可以重复理解需求，提交的内容完成度更高；Claude 总是提交半成品。
+## devin 支持提前 setup，可以运行应用，可以使用工具；Claude 总是提醒它没有工具，经常需要重新提醒它。
+
+我也在使用 [[Tidewave.ai]] ，它比其他工具更能理解 @elixirlang 
+
+
