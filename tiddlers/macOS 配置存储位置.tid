@@ -1,0 +1,14 @@
+created: 20251202142419806
+modified: 20251202142545675
+tags: 
+title: macOS 配置存储位置
+type: text/vnd.tiddlywiki
+
+
+`~/.config/<your-app>/*`
+
+```
+~/.config/gh/hosts.yml
+
+~/.config/op/plugins.sh
+```
