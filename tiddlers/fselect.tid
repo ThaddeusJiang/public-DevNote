@@ -1,0 +1,77 @@
+created: 20251203164241000
+modified: 20251203074922378
+tags: tj-stack
+title: fselect
+type: text/vnd.tiddlywiki
+
+我使用 `fselect` 代替 find, ls, tree 用于复杂的文件检索。
+
+!! fselect 的优势
+
+!!! 1. 语法类似 SQL，编写过滤条件更简单
+
+```
+# fselect - SQL 风格，易读易写
+fselect "path from ~ where name = 'tiddlywiki' and size > 10m"
+
+# find - 需要记住各种参数和选项
+find ~ -name "tiddlywiki" -size +10485760c
+```
+
+!!! 2. 内置聚合函数
+
+```
+# fselect - 直接使用聚合函数
+fselect "COUNT(*), SUM(size), AVG(size) from ~ where name = 'tiddlywiki'"
+
+# find - 需要配合其他工具
+find ~ -name "tiddlywiki" | wc -l  # 计数
+find ~ -name "tiddlywiki" -exec du -ch {} + | tail -1  # 总大小
+```
+
+!!! 3. 支持 json, csv, html 格式输出
+
+```
+# fselect - 多种格式
+fselect "path, size from ~ where name = 'tiddlywiki' into json"
+fselect "path, size from ~ where name = 'tiddlywiki' into csv"
+fselect "path, size from ~ where name = 'tiddlywiki' into html"
+
+# find - 需要额外处理
+find ~ -name "tiddlywiki" | xargs ...
+```
+
+!! 实际使用对比
+
+!!! 查找 tiddlywiki 并统计数量和总大小
+
+```shell
+# fselect - 一行搞定
+fselect "COUNT(*), SUM(size) from ~ where name = 'tiddlywiki'" 2>/dev/null
+
+# find - 需要多步
+find ~ -name "tiddlywiki" -type d 2>/dev/null | wc -l
+find ~ -name "tiddlywiki" -type d -exec du -sb {} + 2>/dev/null | awk '{sum+=$1} END {print sum}'
+```
+
+!! 总结
+
+''fselect 的优势：''
+
+* ✅ SQL 语法，学习成本低
+* ✅ 内置聚合函数，无需额外工具
+* ✅ 支持大小单位（k, m, g）
+* ✅ 输出格式多样（json, csv, html）
+* ✅ 查询更灵活（子查询、复杂条件）
+* ✅ 列选择直观
+
+''适合场景：''
+
+* 需要统计和聚合
+* 需要复杂查询
+* 需要格式化输出
+* 熟悉 SQL 的用户
+
+对于需要统计、聚合和格式化输出的场景，fselect 确实更简单高效。
+
+https://github.com/jhspetersson/fselect

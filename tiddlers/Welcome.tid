@@ -1,6 +1,6 @@
 created: 20230221001904248
 creator: TJ
-modified: 20251114070800864
+modified: 20251203075255869
 modifier: TJ
 tags: 
 title: Welcome
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 欢迎来到我的开发笔记。
 
-使用 TiddlyWiki 构建，完全 local-fist，无限的自定义可能性，永久可用。你也值得拥有，访问 https://github.com/ThaddeusJiang/public-DevNote
+使用 TiddlyWiki 构建，完全 [[local-fist]]，[[零依赖]]，[[永久可用]]，无限的自定义可能性。你也值得拥有，访问 https://github.com/ThaddeusJiang/public-DevNote
 
 ''FAQ''
 

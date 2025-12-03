@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo stop tiddlywiki
-
-PID=$(lsof -ti:8090)
-
-if [ -n "$PID" ]; then
-    kill -9 $PID 2>/dev/null
-fi
