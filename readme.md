@@ -7,5 +7,5 @@ just start
 
 just stop
 
-just commit
+just push
 ```

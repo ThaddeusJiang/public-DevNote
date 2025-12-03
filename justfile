@@ -17,7 +17,7 @@ stop:
     fi
 
 # Git 提交并推送
-commit:
+push:
     #!/usr/bin/env sh
     git add .
     git commit -m "$(date +%Y-%m-%d)"
