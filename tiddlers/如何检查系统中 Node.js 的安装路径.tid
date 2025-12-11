@@ -1,0 +1,159 @@
+created: 20251204105104366
+modified: 20251204105104366
+tags:
+title: 如何检查系统中 Node.js 的安装路径
+type: text/vnd.tiddlywiki
+
+
+! 检查方法
+
+!! 使用脚本检查
+
+项目根目录提供了 `check-node-paths.sh` 脚本，可以全面检查所有 Node.js 安装路径：
+
+```bash
+./check-node-paths.sh
+```
+
+该脚本会检查以下所有安装工具：
+
+* nvm
+* Homebrew
+* n
+* Volta
+* mise (原 rtx)
+* fnm (Fast Node Manager)
+* asdf
+
+!! 手动检查方法
+
+!!! nvm
+
+```bash
+# 检查 nvm 目录
+ls -la ~/.nvm/versions/node
+
+# 检查当前使用的版本
+nvm current
+
+# 列出所有已安装版本
+nvm list
+```
+
+!!! Homebrew
+
+```bash
+# 检查 node 安装路径
+brew --prefix node
+
+# 列出所有 node 相关包
+brew list | grep node
+```
+
+!!! n
+
+```bash
+# 检查安装目录（默认 /usr/local/n/versions/node）
+ls -la /usr/local/n/versions/node
+
+# 或使用 N_PREFIX 环境变量
+echo $N_PREFIX
+ls -la $N_PREFIX/n/versions/node
+```
+
+!!! Volta
+
+```bash
+# 检查 VOLTA_HOME（默认 ~/.volta）
+echo $VOLTA_HOME
+ls -la $VOLTA_HOME/tools/node
+
+# 列出已安装版本
+volta list node
+```
+
+!!! mise (原 rtx)
+
+```bash
+# 检查 MISE_DATA_DIR（默认 ~/.local/share/mise）
+echo $MISE_DATA_DIR
+ls -la $MISE_DATA_DIR/installs/node
+
+# 列出已安装版本
+mise ls node
+```
+
+!!! fnm (Fast Node Manager)
+
+```bash
+# 检查 FNM_DIR（默认 ~/.fnm）
+echo $FNM_DIR
+ls -la $FNM_DIR/node-versions
+
+# 列出已安装版本
+fnm list
+```
+
+!!! asdf
+
+```bash
+# 检查 ASDF_DATA_DIR（默认 ~/.asdf）
+echo $ASDF_DATA_DIR
+ls -la $ASDF_DATA_DIR/installs/nodejs
+
+# 列出已安装版本
+asdf list nodejs
+```
+
+!! 通用检查方法
+
+!!! 查找当前使用的 node
+
+```bash
+which node
+node --version
+```
+
+!!! 查找所有 node 可执行文件
+
+```bash
+# 在常见目录中查找
+find /usr/local /opt $HOME -name node -type f 2>/dev/null
+
+# 或使用 whereis（Linux）
+whereis node
+
+# 或使用 locate（需要先更新数据库）
+locate bin/node
+```
+
+!!! 检查 PATH 环境变量
+
+```bash
+echo $PATH | tr ':' '\n' | grep -E "node|npm|nvm|volta|mise|fnm|asdf"
+```
+
+!!! 检查相关环境变量
+
+```bash
+env | grep -E "NODE|NVM|VOLTA|MISE|FNM|ASDF|N_PREFIX"
+```
+
+!! 常见安装路径总结
+
+| 工具 | 默认安装路径 |
+|------|-------------|
+| nvm | `~/.nvm/versions/node/` |
+| Homebrew | `/usr/local/Cellar/node/` 或 `/opt/homebrew/Cellar/node/` (Apple Silicon) |
+| n | `/usr/local/n/versions/node/` |
+| Volta | `~/.volta/tools/node/` |
+| mise | `~/.local/share/mise/installs/node/` |
+| fnm | `~/.fnm/node-versions/` |
+| asdf | `~/.asdf/installs/nodejs/` |
+
+!! 注意事项
+
+* 不同工具可能同时安装，`which node` 显示的是当前 PATH 中优先级最高的
+* 检查 `~/.zshrc` 或 `~/.bashrc` 中的初始化脚本，了解哪个工具被激活
+* 某些工具（如 nvm）需要 source 初始化脚本才能使用
+* macOS 上 Homebrew 在 Apple Silicon 和 Intel 上的路径不同

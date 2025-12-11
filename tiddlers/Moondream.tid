@@ -1,0 +1,10 @@
+created: 20251211092233524
+modified: 20251211092640569
+tags: [[computer vision tools]]
+title: Moondream
+type: text/vnd.tiddlywiki
+
+2025-12-11 看 X 上开发者分享的示例效果不错，支持 self-hosting。我已经在 Vmemo.app 中初步使用，除了 Moondream Station 暂时不支持 Segment 以外，其他还挺不错的。
+BTW，self-hosting 需要 GPU，目前 zeabur 上买的 Server 无法部署。
+
+https://moondream.ai/

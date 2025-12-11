@@ -1,16 +1,10 @@
 created: 20250712024252222
-modified: 20250808071909746
-tags: dev/记录
+modified: 20251211095243120
+tags: #repeated
 title: AWS SAM Toolkit 无法访问 docker container localhost
 type: text/vnd.tiddlywiki
 
-可以访问
-
-```
-host.docker.internal
-```
-
-Docker Container 无法通过 localhost 或 127.0.0.1 直接访问宿主机，因为 localhost 指向的是 container，这时候就可以通过 host.docker.internal 访问宿主机。
+Docker Container 无法通过 localhost 或 127.0.0.1 直接访问宿主主机，因为 localhost 指向的是 container 自身。可以通过 `host.docker.internal` 访问宿主主机。
 
 ```yml
 services:

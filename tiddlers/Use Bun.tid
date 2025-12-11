@@ -1,7 +1,7 @@
 created: 20250522095005369
-modified: 20250522095332377
-tags: TJ_stack
+modified: 20251211093315586
+tags: tj-stack
 title: Use Bun
 type: text/vnd.tiddlywiki
 
-其实我也想说 Just use [[Bun]] 当现实是团队合作项目中为了减少摩擦选择使用更多的 Node.js 的确更好，麻烦更少。
+其实我也想说 Just use [[Bun]] 但现实是团队合作项目中为了减少摩擦选择使用更多的 Node.js 的确更好，麻烦更少。
